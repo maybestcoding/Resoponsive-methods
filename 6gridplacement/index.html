@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid exercise</title>
+    <style>
+        img {
+            width:300px;
+        }
+        .container {
+            margin-left:30px;            
+            height: 100vh;
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        @media (min-width:681px) and (max-width:1000px){
+           .container { grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+           }            
+        }
+        @media (max-width:680px) {
+           .container { grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+           }
+            
+        }
+    </style>
+</head>
+<body>
+    
+   <h1>Grid Placement</h1> 
+   <div class="container">
+    <div class="orignial part">
+     <a href="public/original.html"><h2>1. Start from here</h2></a>
+     <img src="assets/images/original.png" alt="oringianl layout">
+    </div>
+    <div>
+     <a href="public/exercise1.html"><h2>2. Combination with flex box</h2></a>
+     <img src="assets/images/goal1.png" alt="oringianl layout">
+   </div>
+   <div>
+    <a href="public/exercise2.html"><h2>3. Span and order</h2></a>
+    <img src="assets/images/goal2.png" alt="oringianl layout">
+  </div>
+  <div>
+    <a href="public/exercise3.html"><h2>4. Grid-area</h2></a>
+    <img src="assets/images/goal3.png" alt="oringianl layout">
+  </div>
+  <div>
+    <a href="public/demo4.html"><h2>4. Overlaping</h2></a>
+    <img src="assets/images/goal4.png" alt="oringianl layout">
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;  ;    
+    }
+    .pricing-container {
+      display:flex;
+      justify-content: center;   
+      align-items:center; 
+      gap:30px;       
+      height:100vh;
+    }
+
+
+    .pricing-plan {
+      background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
+        flex:1;
+        max-width:380px;
+        padding:20px;
+        text-align:center;
+        border-radius:30px;
+        box-shadow: 10px 10px 5px gray;
+        
+      }
+      .plan-title {
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        font-size:1.5rem;
+        font-weight:900;
+      }
+
+      .plan-price {
+        font-size: 3rem;
+        font-weight: 900;
+        margin-top:10px;
+      }
+      .plan-features {
+        text-decoration: underline;
+        list-style: none;
+        text-align:left;  
+        line-height: 2;
+               
+      }
+      .plan-button {
+        background-color: #3e8e41;
+        border: none;
+        border-radius:20px;
+        width:100px;
+        height:30px;
+        font-weight:bold;
+        color:white;
+        box-shadow: 3px 3px white
+      }
+      .plan-button:hover {
+        background-color: #EF6262
+      }
+
+     .plan-button:active {
+       background-color: #EF6262;
+       box-shadow: 0 5px #666;
+       transform: translateY(4px);
+}
+     
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+    .pricing-container {      
+      flex-direction: column;
+      height:100%;      
+      }
+      
+      
+
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>☑️ 10GB Storage</li>
+        <li>☑️ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>☑️ 50GB Storage</li>
+        <li>☑️ 5 Users</li>
+        <li>☑️ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>☑️ 100GB Storage</li>
+        <li>☑️ 10 Users</li>
+        <li>☑️ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<!-- ✅ 
+  rgb(154,200,205);
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );
+-->

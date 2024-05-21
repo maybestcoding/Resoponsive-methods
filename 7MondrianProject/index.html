@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+      body {
+        
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {      
+      display:grid;      
+      width: 748px;
+      height: 748px;
+      grid-template-rows:0.7fr 1fr 1fr 0.5fr 0.5fr 0.5fr;
+      grid-template-columns:1fr 1.5fr 2fr 1fr 1fr 0.8fr;
+      gap:9px;
+      background-color: #000;     
+
+    }
+    .item {
+      background-color: #F0F1EC;
+    }
+    .red {
+      background-color:  #da422a;
+    }  
+    
+    .navy {
+      background-color: #3c5f99;
+      grid-column: span 2;
+      grid-row: span 2
+      }  
+    
+    .yellow {
+      background-color: #f5ce31;
+    }
+    .w1 {
+      grid-column: span 2;
+    }    
+    .mid {
+      grid-column: span 2;
+    } 
+    .huge {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .mid2 {
+      grid-column: span 2;
+    } 
+    .w5 {
+      grid-row: span 3;
+      
+    }
+    .w6 {
+      grid-row: span 2;
+    }
+    
+    .b1 {
+      /* background-color: black; */
+      grid-row: span 2;
+    }
+    .w10 {
+      grid-column: span 2;
+    }
+    .sm {
+      grid-row: span 2;
+      
+    }
+    .tiny {
+      grid-row:span 2;
+    }
+
+
+    
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  
+  <div class = "container">
+    <div class="item w1"></div>
+    <div class="item w2"></div>
+    <div class="item yellow mid"></div>
+    <div class="item w3"></div>
+
+    <div class="item w4"></div>
+    <div class="item red huge"></div>
+    <div class="item yellow mid2"></div>
+    <div class="item w5"></div>
+
+    <div class="item w6"></div>    
+    <div class="item w7"></div>
+    <div class="item w8"></div>
+
+    <div class="b1"></div>
+    <div class="item w9"></div>       
+    <div class="item w10"></div>
+
+    <div class="item yellow sm"></div>
+    <div class="item w11"></div>
+    <div class="item navy"></div>
+    <div class="item red tiny"></div>
+
+    <div class="item w12"></div>   
+    <div class="b2"></div>
+    
+    
+    
+  </div>
+</body>
+
+</html>
