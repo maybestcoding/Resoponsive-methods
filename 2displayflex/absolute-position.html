@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absolute Positioning</title>
+  <style>
+    div {
+      position: relative;
+      display: inline-block;
+      background-color: blueviolet;
+    }
+
+    .one {
+      width: 25%;
+      position: absolute;
+    }
+
+    .two {
+      position: absolute;
+      left: 27.25%;
+      width: 25%;
+    }
+
+    .three {
+      position: absolute;
+      left: 53%;
+      width: 40%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <body>
+<h1>Absolute Positioning</h1>
+   
+    <div class="one">
+      <p>I stil don't understand this positioning. First of all
+        tag div and class one, two, three point out same elements.
+      </p>
+    </div>
+    <div class="two">
+      <p>div position is relative and set to inline-block.
+        And to be distiguished background color was set 
+        to be purple. 
+      </p>
+    </div>
+    <div class="three">
+      <p> class one two three looks like div's children,
+        so that positioned as absoulte so that it positioned
+      by relative ancesstor. I tired to move class property
+    to p tag but it did not work at all. </p>
+    </div>
+    
+  </body>
+
+</html>
